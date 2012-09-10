@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5BE6C449-17C1-4C33-B65F-A205A11CAF2F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Charniak</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AnsHeap.cpp" />
+    <ClCompile Include="AnsStrCounts.cpp" />
+    <ClCompile Include="AnswerTree.cpp" />
+    <ClCompile Include="auxify.cpp" />
+    <ClCompile Include="Bchart.cpp" />
+    <ClCompile Include="BchartSm.cpp" />
+    <ClCompile Include="Bst.cpp" />
+    <ClCompile Include="Charniak.cpp" />
+    <ClCompile Include="ChartBase.cpp" />
+    <ClCompile Include="ClassRule.cpp" />
+    <ClCompile Include="CntxArray.cpp" />
+    <ClCompile Include="CombineBests.cpp" />
+    <ClCompile Include="ECArgs.cpp" />
+    <ClCompile Include="Edge.cpp" />
+    <ClCompile Include="EdgeHeap.cpp" />
+    <ClCompile Include="edgeSubFns.cpp" />
+    <ClCompile Include="EgsFromTree.cpp" />
+    <ClCompile Include="ewDciTokStrm.cpp" />
+    <ClCompile Include="extraMain.cpp" />
+    <ClCompile Include="FBinaryArray.cpp" />
+    <ClCompile Include="Feat.cpp" />
+    <ClCompile Include="Feature.cpp" />
+    <ClCompile Include="FeatureTree.cpp" />
+    <ClCompile Include="fhSubFns.cpp" />
+    <ClCompile Include="Field.cpp" />
+    <ClCompile Include="FullHist.cpp" />
+    <ClCompile Include="GotIter.cpp" />
+    <ClCompile Include="headFinder.cpp" />
+    <ClCompile Include="headFinderCh.cpp" />
+    <ClCompile Include="InputTree.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="Link.cpp" />
+    <ClCompile Include="MeChart.cpp" />
+    <ClCompile Include="oparseIt.cpp" />
+    <ClCompile Include="Params.cpp" />
+    <ClCompile Include="ParseStats.cpp" />
+    <ClCompile Include="ScoreTree.cpp" />
+    <ClCompile Include="SentRep.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Term.cpp" />
+    <ClCompile Include="TimeIt.cpp" />
+    <ClCompile Include="UnitRules.cpp" />
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="ValHeap.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AnsHeap.h" />
+    <ClInclude Include="AnswerTree.h" />
+    <ClInclude Include="auxify.h" />
+    <ClInclude Include="Bchart.h" />
+    <ClInclude Include="Bst.h" />
+    <ClInclude Include="ChartBase.h" />
+    <ClInclude Include="ClassRule.h" />
+    <ClInclude Include="CntxArray.h" />
+    <ClInclude Include="CombineBests.h" />
+    <ClInclude Include="ECArgs.h" />
+    <ClInclude Include="ECString.h" />
+    <ClInclude Include="Edge.h" />
+    <ClInclude Include="EdgeHeap.h" />
+    <ClInclude Include="edgeSubFns.h" />
+    <ClInclude Include="ewDciTokStrm.h" />
+    <ClInclude Include="extraMain.h" />
+    <ClInclude Include="FBinaryArray.h" />
+    <ClInclude Include="Feat.h" />
+    <ClInclude Include="Feature.h" />
+    <ClInclude Include="FeatureTree.h" />
+    <ClInclude Include="fhSubFns.h" />
+    <ClInclude Include="Field.h" />
+    <ClInclude Include="FullHist.h" />
+    <ClInclude Include="GotIter.h" />
+    <ClInclude Include="headFinder.h" />
+    <ClInclude Include="headFinderCh.h" />
+    <ClInclude Include="InputTree.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="Link.h" />
+    <ClInclude Include="MeChart.h" />
+    <ClInclude Include="Params.h" />
+    <ClInclude Include="ParseStats.h" />
+    <ClInclude Include="ScoreTree.h" />
+    <ClInclude Include="SentRep.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Term.h" />
+    <ClInclude Include="TimeIt.h" />
+    <ClInclude Include="UnitRules.h" />
+    <ClInclude Include="utils.h" />
+    <ClInclude Include="ValHeap.h" />
+    <ClInclude Include="Wrd.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
