@@ -2,7 +2,7 @@ DISCLAIMER/LICENSE/BLA
 
 *****************************
 Hello there!
-This code is provided "as is" without express or implied warranty. All rights are reserved to Brown University, authors of the original Linux version of this software, and the license remains as explained in the README file.
+This code is provided "as is" without express or implied warranty. All rights are reserved to Brown University, authors of the original Linux version of this software, and the license remains as explained in the OriginalReadme.txt file.
 This code was never used in a production environment, and you are using it at your own risk. So, if your monitor explodes, that's your problem, not ours nor Brown University's. 
 *****************************
 
