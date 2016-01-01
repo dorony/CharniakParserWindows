@@ -23,5 +23,7 @@ The input file format is as follows:
 NOTES:
 
 * This is NOT the multithreaded version of the parser, only the single-threaded version was compiled on Windows.
+* More information can be found in this blog post: http://blogs.microsoft.co.il/dorony/2013/03/02/charniak-parser-on-windows/
 
 ENJOY
+
